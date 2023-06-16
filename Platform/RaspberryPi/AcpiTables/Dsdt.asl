@@ -273,7 +273,7 @@ DefinitionBlock ("Dsdt.aml", "DSDT", 2, "RPIFDN", "RPI", 2)
 
         Method (_CRT) { Return (3632) }    // (90C) Critical temp point (immediate power-off)
         Method (_HOT) { Return (3582) }    // (85C) HOT state where OS should hibernate
-        Method (_PSV) { Return (3532) }    // (80C) Passive cooling (CPU throttling) trip point
+        Method (_PSV) { Return (3282) }    // (55C) Passive cooling (CPU throttling) trip point
 
         // SSDT inserts _AC0/_AL0 @60C here, if a FAN is configured
 
